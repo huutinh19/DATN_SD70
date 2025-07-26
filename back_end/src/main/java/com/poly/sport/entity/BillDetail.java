@@ -1,5 +1,6 @@
 package com.poly.sport.entity;
 
+import com.poly.sport.entity.base.PrimaryEnity;
 import jakarta.persistence.*;
 import lombok.*;
 
