@@ -32,6 +32,9 @@ public class JwtSerrvice {
         claims.put("fullName", account.getName());
         claims.put("avatar", account.getAvatar());
         return Jwts.builder()
+
+
+
                 .setClaims(claims)
                 .setSubject(account.getEmail())
                 .setIssuedAt(new Date(System.currentTimeMillis()))
