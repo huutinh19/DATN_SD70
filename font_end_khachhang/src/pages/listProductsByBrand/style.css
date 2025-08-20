@@ -1,0 +1,66 @@
+/* Glassmorphism effect */
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Gradient for selected states */
+  .gradient-selected {
+    background: linear-gradient(45deg, #3b82f6, #a855f7);
+  }
+  
+  /* Ripple effect for buttons */
+  .ripple {
+    position: relative;
+    overflow: hidden;
+  }
+  .ripple::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    border-radius: 100%;
+    transform: scale(1);
+    transform-origin: center;
+    animation: ripple 0.6s ease-out;
+  }
+  @keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(100);
+      opacity: 0;
+    }
+  }
+  
+  /* Custom checkbox animation */
+  .custom-checkbox {
+    appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #d1d5db;
+    border-radius: 0.25rem;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+  }
+  .custom-checkbox:checked {
+    border-color: transparent;
+    background: linear-gradient(45deg, #3b82f6, #a855f7);
+  }
+  .custom-checkbox:checked::after {
+    content: "✔";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.75rem;
+  }

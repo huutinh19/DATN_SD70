@@ -21,7 +21,12 @@ public interface BillDetailResponse {
 
     String getSize();
 
-    String getSole();
+    String getThuongHieu();
+
+    String getXuatXu();
+    String getTayAo();
+    String getCoAo();
+    String getChatLieu();
 
     BigDecimal getPrice();
 

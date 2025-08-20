@@ -20,6 +20,12 @@ public interface SanPhamChiTietReponse {
     String getColor();
 
     String getSize();
+    String getThuongHieu();
+
+    String getXuatXu();
+    String getTayAo();
+    String getCoAo();
+    String getChatLieu();
     BigDecimal getDiscountPercent();
     BigDecimal getDiscountValue();
 

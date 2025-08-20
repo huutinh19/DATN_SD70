@@ -2,7 +2,7 @@ package com.poly.sport.infrastructure.converter;
 
 import com.poly.sport.entity.Account;
 import com.poly.sport.infrastructure.request.AccountRequest;
-import com.poly.sport.repository.AccountResponse;
+import com.poly.sport.repository.AccountRepository;
 import com.poly.sport.repository.RoleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

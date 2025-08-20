@@ -1,0 +1,28 @@
+.date-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.date-label {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.start-date {
+    color: blue;
+    font-weight: bold;
+    background-color: #e7f3ff; /* Màu nền nhẹ cho ngày bắt đầu */
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #b3d7ff; /* Đường viền nhẹ */
+}
+
+.end-date {
+    color: red;
+    font-weight: bold;
+    background-color: #ffe7e7; /* Màu nền nhẹ cho ngày kết thúc */
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ffb3b3; /* Đường viền nhẹ */
+}

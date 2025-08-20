@@ -1,4 +1,4 @@
-package com.poly.tool;//package com.poly.tool;
+//package com.poly.tool;
 //
 //import com.poly.sport.entity.Account;
 //import com.poly.sport.entity.Role;
@@ -58,15 +58,15 @@ package com.poly.tool;//package com.poly.tool;
 //
 //        // Employee 1
 //        Account nhanVien1 = new Account();
-//        nhanVien1.setName("Lưu Văn Nam");
+//        nhanVien1.setName("Đỗ Xuân Giáp");
 //        nhanVien1.setBirthday(new Date(99, 3, 16));
 //        nhanVien1.setCccd("535834053750");
-//        nhanVien1.setEmail("nam@fpt.edu.vn");
+//        nhanVien1.setEmail("giap@fpt.edu.vn");
 //        nhanVien1.setAccountRoles(AccountRoles.ROLE_EMLOYEE);
 //        nhanVien1.setGender("Nam");
 //        nhanVien1.setPassword(new BCryptPasswordEncoder().encode("123456789"));
 //        nhanVien1.setPhoneNumber("0335867600");
-//        nhanVien1.setUsername("nam123");
+//        nhanVien1.setUsername("giap123");
 //        nhanVien1.setRole(nhanVien);
 //        nhanVien1.setId(accountRepository.save(nhanVien1).getId());
 //

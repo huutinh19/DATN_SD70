@@ -1,0 +1,34 @@
+.badge {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    font-weight: bold;
+    color: white; /* Màu chữ */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.bg-success {
+    background-color: #28a745; /* Màu xanh lá cây */
+}
+
+.bg-danger {
+    background-color: #dc3545; /* Màu đỏ */
+}
+
+.bg-primary {
+    background-color: #007bff; /* Màu xanh dương */
+}
+
+.bg-sm {
+    font-size: 0.9em; /* Kích thước chữ nhỏ hơn */
+}
+
+.bg-dim {
+    opacity: 0.8; /* Độ mờ */
+}
+
+/* Hiệu ứng hover */
+.badge:hover {
+    opacity: 1; /* Tăng độ sáng khi hover */
+}

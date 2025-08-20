@@ -15,11 +15,20 @@ public class FindShoeDetailRequest extends PageableRequest {
     private String shoe;
     private String color;
     private String size;
-    private String sole;
+    private String xuatXu;
+    private String thuongHieu;
+    private String coAo;
+    private String tayAo;
+    private String chatLieu;
+    private List<String> xuatXus;
+    private List<String> thuongHieus;
+    private List<String> coAos;
+    private List<String> tayAos;
+    private List<String> chatLieus;
     private List<String> shoes;
     private List<String> colors;
     private List<String> sizes;
-    private List<String> soles;
+
     private Boolean deleted;
     private String name;
 

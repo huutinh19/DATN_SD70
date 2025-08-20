@@ -1,9 +1,8 @@
 package com.poly.sport.infrastructure.request;
 
-import com.poly.sport.infrastructure.common.PageableRequest;
 import lombok.Getter;
 import lombok.Setter;
-
+import com.poly.sport.infrastructure.common.PageableRequest;
 @Getter
 @Setter
 public class AddressRequest extends PageableRequest {

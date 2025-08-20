@@ -31,6 +31,7 @@ public class SecurityConfiguration {
 
     private final AccountDetalsService accountDetalsService;
 
+
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http
@@ -40,11 +41,12 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(
 
                         request -> request.requestMatchers("/login-v2/**", "/client/**", "/api/vn-pay/**","/images/**").permitAll()
-                                .requestMatchers("/api/voucher").hasRole("ADMIN")
+                                .requestMatchers("/api/voucher").hasAnyRole("ADMIN","EMLOYEE")
                                 .requestMatchers("/api/staff").hasRole("ADMIN")
                                 .requestMatchers("/api/promotion").hasRole("ADMIN")
                                 .requestMatchers("/api/statistical").hasRole("ADMIN")
                                 .requestMatchers("/api/**").hasAnyRole("ADMIN","EMLOYEE")
+
                                 .anyRequest().authenticated())
                 .sessionManagement(manager -> manager.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider()).addFilterBefore(

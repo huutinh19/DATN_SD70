@@ -1,6 +1,7 @@
 package com.poly.sport.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.poly.sport.entity.base.PrimaryEnity;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.Nationalized;
@@ -14,7 +15,7 @@ import org.hibernate.annotations.Nationalized;
 
 @Entity
 @Table(name = "dia_chi")
-public class Address {
+public class Address extends PrimaryEnity {
     @ManyToOne
     @JoinColumn(name = "account_id")
     @JsonIgnore

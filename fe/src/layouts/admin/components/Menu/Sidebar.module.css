@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Noto+Sans+NKo+Unjoined:wght@600&family=Oswald&family=Roboto:ital,wght@0,500;1,700&display=swap');
+
+a {
+  text-decoration: none;
+  font-family: 'IBM Plex Sans', 'Noto Sans NKo Unjoined', 'Oswald', 'Roboto', sans-serif;
+}
+
+/* Font styles for menu items and submenu titles */
+.ant-menu-item, 
+.ant-menu-submenu-title {
+  font-weight: 700 !important; /* Bold font */
+  font-size: 16px !important; /* Larger font size */
+}
+
+/* Hover effect: black background */
+.ant-menu-item:hover, 
+.ant-menu-submenu-title:hover {
+  background-color: black !important; 
+  color: white !important;
+}
+
+/* Hover effect for submenu */
+.ant-menu-submenu:hover .ant-menu-submenu-title {
+  background-color: black !important; 
+  color: white !important;
+}
+
+/* Active (selected) menu item: green background */
+.ant-menu-item-selected {
+  background-color: #28a745 !important; /* Green background for active item */
+  color: white !important;
+}
+
+/* Ensure submenu items under active parent also look consistent */
+.ant-menu-submenu-selected .ant-menu-submenu-title {
+  background-color: #28a745 !important; /* Green for active submenu parent */
+  color: white !important;
+}
+
+/* Submenu items styling */
+.ant-menu-submenu .ant-menu-item {
+  font-weight: 500 !important; /* Slightly lighter font for submenu items */
+}
+
+/* Ensure submenu stays open and looks consistent */
+.ant-menu-submenu-open .ant-menu-submenu-title {
+  background-color: #f8f9fa !important; /* Light background for open submenu */
+  color: #333 !important;
+}
+
+
+/* Sidebar.module.css */
+.menu-item-selected {
+  background-color: #ff9800 !important; /* màu cam */
+  color: white !important;
+}
+
+.menu-item-selected .anticon,
+.menu-item-selected i {
+  color: white !important;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Thông tin đơn hàng - T&T SPORT</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 30px;
+        }
+        .container {
+            max-width: 700px;
+            margin: auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .header img {
+            max-width: 80px;
+        }
+        .header h1 {
+            font-size: 24px;
+            margin-top: 10px;
+            color: #28a745;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 15px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .text-success { color: #28a745; }
+        .text-danger { color: #dc3545; }
+        .text-primary { color: #007bff; }
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: #777;
+            margin-top: 30px;
+        }
+        .lookup-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .lookup-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- Header -->
+    <div class="header">
+        <div class="text-center">
+        </div>
+        <br>
+
+        <h1>Đơn hàng đã được đặt thành công</h1>
+        <p>Cảm ơn bạn đã mua sắm tại T&T SPORT. Dưới đây là thông tin chi tiết đơn hàng của bạn.</p>
+    </div>
+
+    <!-- Bill Summary -->
+    <div class="section">
+        <div class="section-title">Thông tin đơn hàng</div>
+        <table>
+            <tr>
+                <td><strong>Mã đơn hàng</strong></td>
+                <td>${billCode}</td>
+            </tr>
+            <tr>
+                <td><strong>Ngày đặt</strong></td>
+                <td>${createDate}</td>
+            </tr>
+            <tr>
+                <td><strong>Tạm tính</strong></td>
+                <td>${subTotal} VNĐ</td>
+            </tr>
+            <tr>
+                <td><strong>Giảm giá</strong></td>
+                <td class="text-success">${discount} VNĐ</td>
+            </tr>
+            <tr>
+                <td><strong>Phí vận chuyển</strong></td>
+                <td>${shippingFee} VNĐ</td>
+            </tr>
+            <tr>
+                <td><strong>Tổng thanh toán</strong></td>
+                <td class="text-primary"><strong>${total} VNĐ</strong></td>
+            </tr>
+        </table>
+
+        <!-- Lookup button -->
+        <div style="text-align: center;">
+            <a href="http://localhost:4000/lookUpOrders" class="lookup-btn">🔍 Tra cứu đơn hàng</a>
+        </div>
+    </div>
+
+    <!-- Product List -->
+    <div class="section">
+        <div class="section-title">Danh sách sản phẩm</div>
+        <table>
+            <thead>
+            <tr>
+                <th>Sản phẩm</th>
+                <th>Số lượng</th>
+                <th>Đơn giá</th>
+                <th>Thành tiền</th>
+            </tr>
+            </thead>
+            <tbody>
+            ${productRows}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Customer Info -->
+    <div class="section">
+        <div class="section-title">Thông tin người nhận</div>
+        <p><strong>Tên khách hàng:</strong> ${customerName}</p>
+        <p><strong>Số điện thoại:</strong> ${phoneNumber}</p>
+        <p><strong>Địa chỉ:</strong> ${address}</p>
+        ${noteSection}
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>Nếu có thắc mắc, vui lòng liên hệ qua hotline: 033-586-7600 hoặc email: support@t&tsport.com</p>
+        <p>Trân trọng,<br>T&T SPORT Team</p>
+    </div>
+</div>
+</body>
+</html>

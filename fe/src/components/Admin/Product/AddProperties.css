@@ -1,0 +1,35 @@
+/* Định dạng chung */
+.ant-modal-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Label "Kích thước" */
+.ant-form-item-label > label {
+    font-weight: bold;
+}
+
+/* Input */
+/* .ant-input {
+    height: 40px;
+    border-radius: 6px;
+} */
+
+/* Nút Thêm */
+.ant-btn-primary {
+    background-color: #ff9800 !important;
+    border-color: #007bff !important;
+    
+}
+
+
+
+/* Canh chỉnh form */
+.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Giữ kích thước đồng nhất */
+
