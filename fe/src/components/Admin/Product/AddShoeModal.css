@@ -1,0 +1,92 @@
+/* AddShoeModal.css */
+
+/* Đảm bảo modal có đủ không gian */
+.ant-modal-content {
+  padding: 20px;
+}
+
+/* Tùy chỉnh Upload component để hiển thị ảnh theo chiều ngang */
+.ant-upload-list-picture .ant-upload-list-item {
+  display: inline-block !important; /* Hiển thị các ảnh theo hàng ngang */
+  margin-right: 10px; /* Khoảng cách giữa các ảnh */
+  margin-bottom: 0; /* Loại bỏ khoảng cách dưới để tránh xuống dòng không mong muốn */
+}
+
+/* Đảm bảo container của danh sách ảnh không bị giới hạn chiều rộng */
+.ant-upload-list-picture {
+  display: flex; /* Sử dụng flexbox để xếp ngang */
+  flex-wrap: nowrap; /* Ngăn xuống dòng */
+  /* overflow-x: auto;  */
+}
+
+/* Tùy chỉnh kích thước ảnh */
+.ant-upload-list-picture .ant-upload-list-item img {
+  width: 100px; /* Chiều rộng ảnh */
+  height: 100px; /* Chiều cao ảnh */
+  object-fit: cover; /* Đảm bảo ảnh không bị méo */
+}
+
+/* Tùy chỉnh nút upload */
+.ant-upload-select-picture {
+  display: inline-block;
+}
+
+/* Đảm bảo nút "Thêm" căn phải */
+.d-flex.justify-content-end {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Tùy chỉnh button primary */
+.bg-blue {
+  background-color: #1890ff !important;
+  border-color: #1890ff !important;
+}
+
+/* Tùy chỉnh khi hover button */
+.bg-blue:hover {
+  background-color: #40a9ff !important;
+  border-color: #40a9ff !important;
+}
+
+/* Đảm bảo các Form.Item và nút dấu + có cùng chiều rộng và căn chỉnh */
+.uniform-form-item {
+  display: flex;
+  align-items: flex-end; /* Căn các phần tử theo đáy */
+  gap: 8px; /* Khoảng cách giữa các phần tử */
+  width: 100%; /* Đảm bảo chiếm toàn bộ chiều rộng của container */
+}
+
+/* Đặt chiều rộng cố định cho các ô input/select */
+.uniform-form-item .ant-form-item {
+  flex: 1; /* Cho phép ô input mở rộng để chiếm không gian còn lại */
+  margin-bottom: 0; /* Loại bỏ margin mặc định nếu cần */
+}
+
+/* Đặt chiều rộng cố định cho nút dấu + */
+.uniform-form-item .ant-btn {
+  width: 40px; /* Chiều rộng cố định cho nút */
+  height: 40px; /* Chiều cao cố định cho nút */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Loại bỏ padding mặc định */
+}
+
+/* Đảm bảo Select và Input có cùng chiều cao */
+.uniform-form-item .ant-select,
+.uniform-form-item .ant-input {
+  width: 100%; /* Chiều rộng đầy đủ trong container của nó */
+  height: 40px; /* Chiều cao cố định để đồng bộ với nút */
+}
+
+/* Điều chỉnh label và input/select để đồng bộ */
+.uniform-form-item .ant-form-item-label {
+  padding-bottom: 4px; /* Khoảng cách nhỏ giữa label và input */
+}
+
+/* Nếu cần, thêm style cho phần tử cụ thể trong Modal */
+.ant-modal-content .uniform-form-item {
+  margin-bottom: 16px; /* Khoảng cách giữa các hàng */
+}

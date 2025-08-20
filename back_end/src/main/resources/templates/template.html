@@ -1,0 +1,79 @@
+
+
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hóa Đơn Bán Hàng - T&T SPORT</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px; color: #333333; background-color: #f4f4f4;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px; background-color: #ffffff; margin: 20px auto; border: 1px solid #dddddd;">
+    <tr>
+        <td style="padding: 20px; text-align: center;">
+            <img src="" alt="T&T SPORT Logo" style="max-width: 150px; height: auto;">
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 0 20px 20px;">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="text-align: center; padding-bottom: 10px;">
+                        <h2 style="margin: 0; font-size: 18px; font-weight: bold; color: #333333;">HÓA ĐƠN BÁN HÀNG</h2>
+                    </td>
+                    <td style="text-align: right; padding-bottom: 10px;">
+                        <p style="margin: 0; font-weight: bold; font-size: 16px; color: #dc3545;">T&T SPORT</p>
+                        <p style="margin: 5px 0;">Địa chỉ: Phú Kiều, Kiều Mai, Hà Nội</p>
+                        <p style="margin: 5px 0;">Hotline: 033-586-7600</p>
+                    </td>
+                </tr>
+            </table>
+            <h3 style="text-align: center; font-size: 24px; font-weight: bold; color: #333333; margin: 20px 0;">T&T SPORT</h3>
+            <table width="100%" border="0" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td style="width: 50%;">Khách hàng:</td>
+                    <td style="width: 50%; text-align: right;">${customerName}</td>
+                </tr>
+                <tr>
+                    <td>Địa chỉ:</td>
+                    <td style="text-align: right;">${address}</td>
+                </tr>
+            </table>
+            <h4 style="font-size: 16px; font-weight: bold; margin: 20px 0 10px;">DANH SÁCH SẢN PHẨM KHÁCH HÀNG MUA</h4>
+            <table width="100%" border="0" cellpadding="8" cellspacing="0" style="border-collapse: collapse;">
+                <thead>
+                <tr style="background-color: #f8f8f8;">
+                    <th style="border: 1px solid #dddddd; text-align: left; font-weight: bold;">#</th>
+                    <th style="border: 1px solid #dddddd; text-align: left; font-weight: bold;">Tên sản phẩm</th>
+                    <th style="border: 1px solid #dddddd; text-align: left; font-weight: bold;">Số lượng</th>
+                    <th style="border: 1px solid #dddddd; text-align: left; font-weight: bold;">Đơn giá</th>
+                    <th style="border: 1px solid #dddddd; text-align: left; font-weight: bold;">Thành tiền</th>
+                </tr>
+                </thead>
+                <tbody>
+                ${productRows}
+                </tbody>
+            </table>
+            ${discountSection}
+            <table width="100%" border="0" cellpadding="5" cellspacing="0" style="margin-top: 20px;">
+                <tr>
+                    <td style="width: 50%;">Phí vận chuyển:</td>
+                    <td style="width: 50%; text-align: right; font-weight: bold;">${moneyShip} VNĐ</td>
+                </tr>
+                <tr>
+                    <td>Tổng tiền phải thanh toán:</td>
+                    <td style="text-align: right; font-weight: bold; color: #dc3545;">${totalMoney} VNĐ</td>
+                </tr>
+                <tr>
+                    <td>Trạng thái đơn hàng:</td>
+                    <td style="text-align: right; font-weight: bold;">${status}</td>
+                </tr>
+            </table>
+            <p style="text-align: center; margin: 20px 0; font-size: 12px;">Nếu có thắc mắc, vui lòng liên hệ qua hotline: 033-586-7600.</p>
+            <p style="text-align: center; margin: 10px 0; font-weight: bold;">Trân trọng,<br>T&T SPORT</p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

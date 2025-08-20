@@ -1,0 +1,6 @@
+.Timeline-wrapper-1 {
+  position: relative;
+  overflow: auto !important;
+  /* width: 100%; */
+  max-width: 2000px;
+}

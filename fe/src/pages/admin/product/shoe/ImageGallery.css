@@ -1,0 +1,62 @@
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* margin-left: 50px; */
+  }
+  
+  .image-item {
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    width: 145px; /* Tăng kích thước khung chứa */
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-item img {
+    width: 100%;
+    height: 180px;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  .image-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .selected-label {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: rgba(28, 224, 67, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+  .image-item div {
+    padding: 5px;
+    border-radius: 10px;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .image-item div:hover {
+    border: 2px solid #007bff;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  
